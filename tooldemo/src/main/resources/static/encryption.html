@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Input Page</title>
+  <style>
+        body {
+            background-image: url("download.jpg");
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .navigation {
+            background-color: #333;
+            margin: 0;
+            padding: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .navigation ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .form-container {
+            text-align: center;
+        }
+
+        .form-container label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .form-container select {
+            margin-bottom: 10px;
+        }
+
+        .navigation li {
+            display: inline-block;
+            margin-right: 1px;
+        }
+
+        li a {
+            display: block;
+            color: #fff;
+            padding: 12px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+
+        .form-container button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .container {
+            padding: 60px;
+            border-radius: 5px;
+            text-align: center;
+            display: inline-block;
+            background-color: #ddd;
+            margin-bottom: 10px;
+        }
+
+        .container input,
+        .container select {
+            width: 200px;
+		text-align: center;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="navigation">
+  <ul>
+    <li><a href="encryption.html">Encryption</a></li>
+    <li><a href="decryption.html">Decryption</a></li>
+    <li><a href="tokenization.html">Tokenization</a></li>
+    <li><a href="detokenization.html">Detokenization</a></li>
+    <li><a href="logout.html">Logout</a></li>
+  </ul>
+</div>
+
+<div class="form-container">
+  <form>
+    <div class="container">
+      <h2>Encryption</h2>
+      <input type="text" id="stringInput" name="stringInput" placeholder="Enter a string" required>
+      <br>
+      <select id="optionSelect" name="optionSelect" placeholder="Select Type">
+        <option value="xx">Select Type</option>
+        <option value="pii">PCI</option>
+        <option value="pci">PII</option>
+        <option value="uk">Unknown</option>
+      </select>
+      <br>
+      <button type="submit">Submit</button>
+    </div>
+
+  </form>
+</div>
+</body>
+</html>
